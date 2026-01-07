@@ -16,25 +16,27 @@ This evidence supports the control response documented in the System Security Pl
 
 Evidence for this control demonstrates that:
 
-- Remote access is explicitly enabled and managed
-- Remote access connections are controlled by system configuration
-- Remote access usage is subject to organizational oversight
+- Remote access to the enclave is explicitly defined and controlled
+- Only approved remote access methods are permitted
+- Remote access is restricted to authenticated users and managed devices
 
 ---
 
 ## Evidence Artifacts
 
-### 1. Remote Access Configuration
+### 1. Remote Access Control Configuration
 
 Evidence demonstrating controlled remote access may include:
 
-- Configuration settings enabling or restricting remote access
-- Defined remote access methods approved by the organization
+- Conditional Access policies restricting access to managed devices
+- Restrictions preventing access from unmanaged or unknown devices
+- Configuration requiring authenticated cloud access for remote users
 
 Examples of acceptable sources:
 
-- VPN or remote access configuration settings
-- Cloud service remote access controls
+- Microsoft Entra ID Conditional Access device and location policies
+- Microsoft Intune device compliance requirements
+- Google Workspace Admin Console access and endpoint policies
 
 ---
 
@@ -47,5 +49,5 @@ policy and contractual requirements and is available for review during assessmen
 
 ## Notes
 
-Remote access may include VPN, remote desktop, or cloud-based access mechanisms
-provided access is explicitly controlled.
+Remote access in cloud-based environments is controlled through identity,
+device trust, and access policies rather than traditional network boundaries.
