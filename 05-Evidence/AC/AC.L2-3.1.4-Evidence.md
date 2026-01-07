@@ -3,78 +3,82 @@
 
 ---
 
-## Control Overview
+## What This Evidence Shows
 
-This document identifies evidence used to demonstrate implementation of
-AC.L2-3.1.4, which requires separation of duties to reduce the risk of
-unauthorized or malicious activity without collusion.
+This evidence shows that administrative, security, and operational duties
+are not all performed by the same individual, or that compensating controls
+are in place when full separation is not possible.
 
-This evidence supports the control response documented in the System Security Plan (SSP).
-
----
-
-## Evidence Objectives
-
-Evidence for this control demonstrates that:
-
-- Administrative, security, and operational duties are defined and separated
-- Privileged functions are restricted to authorized accounts
-- Privileged activities are subject to oversight and review
-- Compensating controls exist where full separation is not feasible
+This supports AC.L2-3.1.4 (Separation of Duties) in the System Security Plan (SSP).
 
 ---
 
-## Evidence Artifacts
+## How Separation of Duties Is Demonstrated
 
-### 1. Role and Responsibility Definitions
+### 1. Duties Are Clearly Defined
 
-Evidence demonstrating separation of duties may include:
+The organization defines different responsibilities for:
+- System administration
+- Security or compliance oversight
+- Normal system use and operations
 
-- Role and responsibility matrix
-- Job descriptions identifying administrative vs. user functions
-- Access control policy defining privileged roles
+**Examples of how this is shown:**
 
----
+- Job descriptions or role descriptions show who is responsible for
+  administration versus day-to-day use
+- Policies or internal documentation describe who can make system changes
+  and who approves or reviews those changes
 
-### 2. Privileged Account Inventory
-
-Evidence demonstrating restricted privileged access may include:
-
-- List of administrative or privileged accounts
-- Mapping of privileged accounts to assigned individuals
-- Documentation showing separation between standard user and admin accounts
+This shows that responsibilities are intentionally separated and understood.
 
 ---
 
-### 3. Use of Separate Accounts
+### 2. Administrative and User Responsibilities Are Not Combined
 
-Evidence demonstrating enforcement of separation may include:
+Individuals who perform routine operational work are not also responsible
+for unrestricted system administration without oversight.
 
-- Account listings showing distinct admin and user accounts
-- Authentication or access logs showing privileged actions performed only by admin accounts
-- System configuration showing privileged roles not assigned to standard users
+**Examples of how this is shown:**
 
----
+- Only designated individuals perform system administration tasks
+- Regular users do not perform administrative or security management duties
+- Where a person has multiple responsibilities, those duties are documented
 
-### 4. Oversight and Compensating Controls
-
-Where staffing limitations exist, evidence may include:
-
-- Management review records of privileged activity
-- Audit logs of administrative actions
-- Documented compensating controls such as increased logging or supervisory review
+This reduces the risk that one person can misuse the system without detection.
 
 ---
 
-## Evidence Retention
+### 3. Oversight Exists for Privileged Activities
 
-Evidence supporting this control is retained in accordance with organizational
-policy and contractual requirements and is available for review during assessment.
+Administrative and security-related activities are subject to oversight.
+
+**Examples of how this is shown:**
+
+- Management or leadership reviews administrative actions
+- Another individual reviews changes made by administrators
+- Security or compliance responsibilities include review or approval duties
+
+This oversight helps detect mistakes or malicious actions.
 
 ---
 
-## Notes
+### 4. Compensating Controls Are Used When Duties Cannot Be Fully Separated
 
-This document identifies representative evidence artifacts.
-Organizations may implement different technical or procedural controls provided
-the same objectives are met and evidence is available.
+In small organizations where one person must perform multiple roles,
+additional controls are used to reduce risk.
+
+**Examples of how this is shown:**
+
+- Increased management review of administrative actions
+- Documentation of decisions and approvals
+- Independent review by a manager, owner, or external party
+
+This ensures that lack of staffing does not eliminate accountability.
+
+---
+
+## Where This Evidence Exists
+
+This evidence exists in organizational policies, role descriptions,
+management procedures, and oversight practices and is retained according
+to organizational policy and contractual requirements.
