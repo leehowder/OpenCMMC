@@ -6,8 +6,8 @@
 ## Control Overview
 
 This document describes the evidence used to demonstrate implementation of
-AC.L2-3.1.11, which requires system sessions to be terminated after defined
-conditions are met.
+AC.L2-3.1.11, which requires user sessions to be terminated after defined
+conditions such as inactivity.
 
 This evidence supports the control response documented in the System Security Plan (SSP).
 
@@ -17,25 +17,27 @@ This evidence supports the control response documented in the System Security Pl
 
 Evidence for this control demonstrates that:
 
-- User sessions are terminated after inactivity or other defined conditions
-- Session termination settings are enforced by system configuration
-- Users must re-authenticate after session termination
+- User sessions do not remain active indefinitely
+- Session timeout conditions are explicitly defined
+- Re-authentication is required after session termination
 
 ---
 
 ## Evidence Artifacts
 
-### 1. Session Termination Configuration
+### 1. Session Timeout Enforcement
 
 Evidence demonstrating session termination may include:
 
-- Configuration settings defining session timeout or termination conditions
-- Policies enforcing session termination after inactivity
+- Defined inactivity timeout values for user sessions
+- Configuration preventing unlimited or persistent login sessions
+- Enforcement of re-authentication after session termination
 
 Examples of acceptable sources:
 
-- Operating system or endpoint security settings
-- Cloud application session timeout settings
+- Microsoft Entra ID Conditional Access session controls
+- Microsoft Intune device lock or session timeout policies
+- Google Workspace Admin Console session duration settings
 
 ---
 
@@ -48,5 +50,5 @@ policy and contractual requirements and is available for review during assessmen
 
 ## Notes
 
-Session termination may occur due to inactivity, logout, or other defined
-conditions provided access is ended and re-authentication is required.
+Session termination must occur automatically based on defined conditions and
+must require re-authentication to regain access.
