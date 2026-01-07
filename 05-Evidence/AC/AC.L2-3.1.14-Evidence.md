@@ -6,8 +6,8 @@
 ## Control Overview
 
 This document describes the evidence used to demonstrate implementation of
-AC.L2-3.1.14, which requires remote access to be routed through managed
-access control points.
+AC.L2-3.1.14, which requires remote access to be routed through managed access
+control points.
 
 This evidence supports the control response documented in the System Security Plan (SSP).
 
@@ -17,25 +17,27 @@ This evidence supports the control response documented in the System Security Pl
 
 Evidence for this control demonstrates that:
 
-- Remote access connections are routed through approved access points
-- Access control points are managed and configured by the organization
-- Direct, unmanaged remote connections are not permitted
+- Remote access is routed through centrally managed access controls
+- Access decisions are enforced by organizational policy
+- Direct, unmanaged access paths are not permitted
 
 ---
 
 ## Evidence Artifacts
 
-### 1. Managed Remote Access Pathways
+### 1. Managed Cloud Access Enforcement
 
-Evidence demonstrating managed access points may include:
+Evidence demonstrating managed access control points may include:
 
-- Network or system configuration showing centralized remote access
-- Documentation identifying approved remote access entry points
+- Centralized identity-based access controls governing remote access
+- Device trust requirements enforced before access is granted
+- Denial of access from unmanaged or non-compliant devices
 
 Examples of acceptable sources:
 
-- VPN gateway configuration
-- Secure remote access service settings
+- Microsoft Entra ID Conditional Access policies
+- Microsoft Intune device compliance enforcement
+- Google Workspace Admin Console access control policies
 
 ---
 
@@ -48,5 +50,6 @@ policy and contractual requirements and is available for review during assessmen
 
 ## Notes
 
-Managed access control points ensure remote access is enforced through
-centralized and controlled mechanisms.
+In cloud-first environments, managed access control points are implemented
+through identity, device, and access policy enforcement rather than
+traditional network gateways.
