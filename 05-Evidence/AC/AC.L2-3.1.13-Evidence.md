@@ -6,8 +6,7 @@
 ## Control Overview
 
 This document describes the evidence used to demonstrate implementation of
-AC.L2-3.1.13, which requires cryptographic mechanisms to protect the
-confidentiality of Controlled Unclassified Information (CUI) during transmission.
+AC.L2-3.1.13, which requires cryptographic protection of CUI during transmission.
 
 This evidence supports the control response documented in the System Security Plan (SSP).
 
@@ -17,8 +16,8 @@ This evidence supports the control response documented in the System Security Pl
 
 Evidence for this control demonstrates that:
 
-- CUI is encrypted when transmitted
-- Approved cryptographic mechanisms are used
+- CUI is encrypted during transmission
+- Secure communication protocols are enforced
 - Unencrypted transmission of CUI is not permitted
 
 ---
@@ -29,13 +28,15 @@ Evidence for this control demonstrates that:
 
 Evidence demonstrating encryption may include:
 
-- Configuration settings enforcing encrypted network connections
-- Security policies requiring encryption for CUI transmission
+- Enforcement of HTTPS or TLS for cloud services handling CUI
+- Configuration preventing access to services over insecure protocols
+- Organizational requirement that CUI is transmitted only over encrypted channels
 
 Examples of acceptable sources:
 
-- TLS or HTTPS configuration settings
-- Secure email or secure file transfer configurations
+- Microsoft 365 GCC High service encryption enforcement
+- Entra ID application access settings requiring secure transport
+- Google Workspace encryption and secure transport settings
 
 ---
 
@@ -48,5 +49,5 @@ policy and contractual requirements and is available for review during assessmen
 
 ## Notes
 
-Encryption mechanisms must protect the confidentiality of CUI whenever it is
-transmitted across networks.
+Encryption must protect the confidentiality of CUI whenever it is transmitted,
+including access from remote locations using managed devices.
