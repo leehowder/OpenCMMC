@@ -3,83 +3,79 @@
 
 ---
 
-## Control Overview
+## What You Are Proving
 
-This document identifies evidence used to demonstrate implementation of
-AC.L2-3.1.3, which requires the organization to control the flow of CUI
-in accordance with approved authorizations.
-
-This evidence supports the control response documented in the System Security Plan (SSP).
+You are proving that CUI is only allowed to exist and move inside approved
+systems and that it cannot be sent to systems or locations that are not
+authorized.
 
 ---
 
-## Evidence Objectives
+## How to Collect Evidence for This Control
 
-Evidence for this control demonstrates that:
+### 1. Identify the Systems Allowed to Handle CUI
 
-- The CUI system boundary is defined
-- Authorized CUI data flows are identified
-- Unauthorized CUI transfers are restricted or blocked
-- Users are governed by documented CUI handling requirements
+Confirm which systems are approved to store, process, or transmit CUI.
 
----
+**How to check:**
+- Open the System Security Plan (SSP)
+- Locate the section that lists in-scope systems
+- Confirm that these systems are the only ones used for CUI
 
-## Evidence Artifacts
-
-### 1. System Boundary Definition
-
-Evidence demonstrating defined CUI boundaries may include:
-
-- SSP section defining in-scope and out-of-scope systems
-- Network or system architecture diagrams identifying CUI components
-- Boundary descriptions referencing authorized interconnections
+If a system is not listed as in scope, CUI should not be on it.
 
 ---
 
-### 2. Authorized CUI Data Flows
+### 2. Confirm How CUI Is Allowed to Move
 
-Evidence demonstrating identified and approved CUI flows may include:
+Confirm how CUI moves between approved systems during normal work.
 
-- Data flow diagrams showing permitted CUI paths
-- Documentation describing how CUI moves between systems
-- Approved workflows involving CUI processing or transmission
+**How to check:**
+- Identify where CUI is created (for example: email, file storage, applications)
+- Identify where CUI is sent or shared
+- Confirm that CUI only moves between systems listed as in scope in the SSP
 
----
-
-### 3. Technical Controls Restricting CUI Flow
-
-Evidence demonstrating prevention of unauthorized CUI flows may include:
-
-- Configuration settings restricting external file sharing
-- Application or platform settings limiting data export
-- Network or system controls preventing unauthorized transfers
-
-Examples of acceptable sources:
-- File sharing configuration settings
-- Collaboration platform external sharing restrictions
-- Application-level access controls
+You should be able to explain, in plain language, how CUI flows and where it does not go.
 
 ---
 
-### 4. User Handling Restrictions
+### 3. Verify That CUI Cannot Be Sent Outside Approved Systems
 
-Evidence demonstrating user compliance requirements may include:
+Confirm that technical settings prevent CUI from being shared externally.
 
-- CUI handling policy
-- User training records referencing CUI transmission restrictions
-- User acknowledgments of CUI handling rules
+**How to check in Microsoft GCC High:**
+- Review file sharing settings for SharePoint, OneDrive, and Teams
+- Confirm external sharing is disabled or restricted
+- Confirm users cannot send CUI to personal email or cloud storage
+
+**How to check in Google Workspace:**
+- Review Drive sharing settings
+- Confirm external sharing is restricted or disabled
+- Confirm users cannot share files containing CUI outside the organization
+
+If users can freely share files externally, this control is not met.
 
 ---
 
-## Evidence Retention
+### 4. Confirm Users Know Where CUI Is Allowed
 
-Evidence supporting this control is retained in accordance with organizational
-policy and contractual requirements and is available for review during assessment.
+Confirm users are expected to keep CUI inside approved systems.
+
+**How to check:**
+- Review written guidance or policy that explains where CUI may be stored or shared
+- Confirm users are instructed not to move CUI to unauthorized systems
+- Confirm users understand which systems are approved for CUI
+
+Users should not have to guess where CUI is allowed to go.
 
 ---
 
-## Notes
+## Where This Evidence Comes From
 
-This document identifies representative evidence artifacts.
-Organizations may implement different technical solutions provided the same
-objectives are met and evidence is available.
+Evidence for this control comes from:
+- The SSP system boundary definition
+- Application and sharing configuration settings
+- Organizational rules governing CUI handling
+
+This evidence is retained according to organizational policy and is available
+during assessment.
